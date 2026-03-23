@@ -38,7 +38,7 @@ const contactData = [
   },
 ];
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <>
       {/* Hero Section */}
@@ -89,4 +89,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;
