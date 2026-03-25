@@ -27,14 +27,14 @@ export default function IndustriesSection() {
         
         {/* Left Side: Content */}
         <div className="lg:w-1/2 text-left">
-          <h2 className="text-4xl lg:text-3xl font-bold text-slate-800 leading-tight mb-6">
+          <h2 className="text-4xl lg:text-3xl font-bold text-black leading-tight mb-6">
             Empowering Industries Through Technology, Innovation, and Expertise
           </h2>
-          <p className="text-slate-500 text-lg leading-relaxed mb-10">
+          <p className="text-gray-dark text-lg leading-relaxed mb-10">
             Our expertise spans multiple sectors, providing smart solutions that drive growth and efficiency. 
             From startups to established businesses, we make an impact everywhere.
           </p>
-          <Link href="/contact" className="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-all shadow-lg shadow-teal-100 w-48">
+          <Link href="/contact" className="group flex items-center gap-2 bg-primary hover:bg-black text-white font-semibold py-4 px-8 rounded-lg transition-all shadow-lg w-48">
             Get a Quote 
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -45,12 +45,12 @@ export default function IndustriesSection() {
           {industries.map((item, index) => (
             <div 
               key={index} 
-              className="group flex flex-col items-center justify-center p-6 border-[1.5px] border-red-200 rounded-2xl aspect-square transition-all duration-300 hover:bg-red-600 hover:border-red-600 cursor-pointer shadow-sm hover:shadow-xl hover:shadow-red-200"
+              className="group flex flex-col items-center justify-center p-6 border-[1.5px] border-gray-light rounded-2xl aspect-square transition-all duration-300 hover:bg-primary hover:border-primary cursor-pointer shadow-sm hover:shadow-xl"
             >
               {/* Icon - Changes from Blue to White on Hover */}
-              <item.icon className="w-10 h-10 mb-4 text-red-500 transition-colors duration-300 group-hover:text-white" strokeWidth={1.5} />
+              <item.icon className="w-10 h-10 mb-4 text-primary transition-colors duration-300 group-hover:text-white" strokeWidth={1.5} />
               
-              <span className="text-center text-sm font-semibold text-slate-600 transition-colors duration-300 group-hover:text-white">
+              <span className="text-center text-sm font-semibold text-gray-dark transition-colors duration-300 group-hover:text-white">
                 {item.name}
               </span>
             </div>

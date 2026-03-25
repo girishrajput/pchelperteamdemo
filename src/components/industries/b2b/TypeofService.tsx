@@ -59,10 +59,10 @@ const SERVICE_DATA = [
 
 export default function TypeofService() {
   return (
-    <section className="bg-slate-50 py-20 px-4">
+    <section className="bg-gray-light py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Services */}
-        <div className="divide-y divide-slate-200">
+        <div className="divide-y divide-gray-light">
           {SERVICE_DATA.map((service, index) => (
             <ServiceCard
               key={index}

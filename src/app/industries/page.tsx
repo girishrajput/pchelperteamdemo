@@ -51,16 +51,16 @@ const Industries = () => {
         subtitle=""
       />
 
-      <div className="bg-[#FFFFFF] text-[#1A1A1A] py-24 px-6 font-sans">
+      <div className="bg-white text-black py-24 px-6 font-sans">
         {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <div className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-[#FF4D2D] uppercase bg-red-50 rounded-full">
+          <div className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-primary uppercase bg-gray-light rounded-full">
             What We Do
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-            Tailored Solutions for <span className="text-[#FF4D2D]">Every Industry</span>
+            Tailored Solutions for <span className="text-primary">Every Industry</span>
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-dark text-lg max-w-2xl mx-auto leading-relaxed">
             We combine creativity with technical excellence to help you achieve better results and solidify your position in the global market.
           </p>
         </div>
@@ -73,23 +73,23 @@ const Industries = () => {
               className="group relative bg-white border border-gray-100 p-10 rounded-2xl transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:-translate-y-2 overflow-hidden"
             >
               {/* Subtle Accent Corner */}
-              <div className="absolute top-0 right-0 w-16 h-16 bg-[#FF4D2D]/5 rounded-bl-full transition-all duration-300 group-hover:bg-[#FF4D2D] flex items-center justify-center">
-                <div className="w-1.5 h-1.5 bg-[#FF4D2D] rounded-full group-hover:bg-white transition-colors"></div>
+              <div className="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full transition-all duration-300 group-hover:bg-primary flex items-center justify-center">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full group-hover:bg-white transition-colors"></div>
               </div>
 
               {/* Icon Circle */}
-              <div className="w-20 h-20 bg-gray-50 text-[#FF4D2D] rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-[#FF4D2D] group-hover:text-white group-hover:rotate-3">
+              <div className="w-20 h-20 bg-gray-light text-primary rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-3">
                 {service.icon}
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-[#FF4D2D] transition-colors duration-300">
+              <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
                 {service.title}
               </h3>
-              <p className="text-gray-500 mb-8 leading-relaxed">
+              <p className="text-gray-dark mb-8 leading-relaxed">
                 {service.description}
               </p>
 
-              <button className="flex items-center gap-2 font-bold text-[#FF4D2D] group-hover:gap-4 transition-all duration-300 uppercase tracking-wider text-sm">
+              <button className="flex items-center gap-2 font-bold text-primary group-hover:gap-4 transition-all duration-300 uppercase tracking-wider text-sm">
                 Read More <ArrowRight className="w-4 h-4" />
               </button>
             </div>

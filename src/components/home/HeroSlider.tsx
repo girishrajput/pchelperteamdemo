@@ -104,7 +104,7 @@ export default function HeroSlider() {
                   transition={{ delay: 0.6, duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  <Link href="/contact" className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg">
+                  <Link href="/contact" className="bg-primary hover:bg-black text-white px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg">
                     Get Started
                   </Link>
                 </motion.div>
@@ -122,7 +122,7 @@ export default function HeroSlider() {
           opacity: 0.5;
         }
         .swiper-pagination-bullet-active {
-          background: #dc2626 !important;
+          background: #ff0000 !important;
           opacity: 1;
         }
       `}</style>

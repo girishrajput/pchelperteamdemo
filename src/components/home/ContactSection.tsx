@@ -15,18 +15,18 @@ export default function ContactSection() {
   }
 
   // Common styles for inputs to keep the code clean
-  const inputStyles = "w-full p-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all bg-slate-50";
+  const inputStyles = "w-full p-3 rounded-lg border border-gray-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-gray-light";
 
   return (
-    <section className="bg-gray-200 py-20 px-6 lg:px-12 min-h-screen flex items-center">
+    <section className="bg-gray-light py-20 px-6 lg:px-12 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         {/* Left Side: Content & Social Icons */}
         <div className="lg:w-1/2">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6 leading-tight">
+          <h2 className="text-5xl font-bold text-black mb-6 leading-tight">
             Join Hands with Us
           </h2>
-          <p className="text-slate-600 text-lg leading-relaxed mb-12 max-w-xl">
+          <p className="text-gray-dark text-lg leading-relaxed mb-12 max-w-xl">
             With a strong and diversified web presence, PCHelperTeam. invites businesses
             and individuals from every industry vertical to collaborate, innovate, and
             create meaningful impact in the digital world.
@@ -36,7 +36,7 @@ export default function ContactSection() {
             {[Mail, Phone, MessageSquare, User].map((Icon, idx) => (
               <div
                 key={idx}
-                className="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-slate-400 hover:text-red-600 hover:border-red-600 hover:bg-white transition-all cursor-pointer shadow-sm"
+                className="w-12 h-12 rounded-full border border-gray-light flex items-center justify-center text-gray-dark hover:text-primary hover:border-primary hover:bg-white transition-all cursor-pointer shadow-sm"
               >
                 <Icon size={20} strokeWidth={1.5} />
               </div>
@@ -46,8 +46,8 @@ export default function ContactSection() {
 
         {/* Right Side: Contact Form Card */}
         <div className="lg:w-1/2 w-full">
-          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10 border border-slate-100">
-            <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center lg:text-left">
+          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10 border border-gray-light">
+            <h3 className="text-2xl font-bold text-black mb-8 text-center lg:text-left">
               Let&apos;s Talk About Your Idea
             </h3>
 
@@ -100,7 +100,7 @@ export default function ContactSection() {
 
               <button 
                 type="submit" 
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-lg transition-colors shadow-lg shadow-red-200"
+                className="w-full bg-primary hover:bg-black text-white font-bold py-4 rounded-lg transition-colors shadow-lg"
               >
                 Send Message
               </button>

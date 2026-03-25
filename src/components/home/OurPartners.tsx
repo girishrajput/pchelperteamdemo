@@ -23,20 +23,9 @@ const PARTNERS = [
 
 export default function OurPartners() {
   return (
-    <section style={{ 
-      padding: '60px 20px', 
-      background: '#ffffff',
-      width: '100%',
-      overflow: 'hidden' // Prevents horizontal scroll glitches
-    }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 style={{ 
-          textAlign: 'center', 
-          marginBottom: '40px', 
-          fontSize: '2rem',
-          fontWeight: 'bold',
-          color: '#333'
-        }}>
+    <section className="py-20 px-6 bg-white w-full overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-center mb-16 text-3xl md:text-4xl font-bold text-black">
           Our Partners
         </h2>
         
@@ -60,17 +49,11 @@ export default function OurPartners() {
               slidesPerView: 5,
             },
           }}
-          style={{ paddingBottom: '30px' }}
+          className="pb-8"
         >
           {PARTNERS.map((partner) => (
             <SwiperSlide key={partner.id}>
-              <div style={{ 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center',
-                height: '80px',
-                padding: '10px'
-              }}>
+              <div className="flex justify-center items-center h-20 p-3">
                 <Image 
                   src={partner.logo} 
                   alt={partner.name}

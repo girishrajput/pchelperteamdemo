@@ -33,9 +33,9 @@ export const ServiceCard = ({
 
       {/* Content */}
       <div className="w-full md:w-1/2 space-y-4">
-        <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
+        <h3 className="text-2xl font-bold text-black">{title}</h3>
 
-        <p className="text-slate-600 leading-relaxed">
+        <p className="text-gray-dark leading-relaxed">
           {description}
         </p>
       </div>

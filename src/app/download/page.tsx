@@ -12,25 +12,25 @@ const Download = () => {
         subtitle=""
       />
 
-      <section className="relative overflow-hidden bg-slate-50 py-16 sm:py-24">
+      <section className="relative overflow-hidden bg-gray-light py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:items-center lg:gap-x-12">
 
             {/* Left Column: Content */}
             <div className="max-w-xl">
-              <h2 className="text-lg font-semibold leading-7 text-red-600 uppercase tracking-wide">
+              <h2 className="text-lg font-semibold leading-7 text-primary uppercase tracking-wide">
                 Secure Downloads
               </h2>
-              <p className="mt-2 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-                Get free, legal, and supported software <span className="text-red-600">here, now!</span>
+              <p className="mt-2 text-4xl font-extrabold tracking-tight text-black sm:text-5xl">
+                Get free, legal, and supported software <span className="text-primary">here, now!</span>
               </p>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
+              <p className="mt-6 text-lg leading-8 text-gray-dark">
                 Excited? You can download many of our recommended and supported full version applications.
                 Everything we recommend satisfies the highest security and legal criteria.
               </p>
 
               {/* Feature List (Makes the long text scannable) */}
-              <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-slate-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-dark lg:max-w-none">
                 {[
                   '100% Licensed & Legal',
                   'Free of nagware, bloatware & malware',
@@ -38,8 +38,8 @@ const Download = () => {
                   'Lifetime updates & upgrade rights'
                 ].map((feature) => (
                   <div key={feature} className="relative pl-9">
-                    <dt className="inline font-semibold text-slate-900">
-                      <span className="absolute left-1 top-1 h-5 w-5 text-green-500">✓</span>
+                    <dt className="inline font-semibold text-black">
+                      <span className="absolute left-1 top-1 h-5 w-5 text-primary">✓</span>
                       {feature}
                     </dt>
                   </div>
@@ -47,7 +47,7 @@ const Download = () => {
               </dl>
 
               <div className="mt-10 flex items-center gap-x-6">
-                <a href="#" className="rounded-md bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-500 transition-colors">
+                <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black transition-colors">
                   Browse Applications
                 </a>
                 <a href="#" className="text-sm font-semibold leading-6 text-slate-900">

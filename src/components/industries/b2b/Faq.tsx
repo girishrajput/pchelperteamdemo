@@ -26,13 +26,13 @@ const faqData = [
 
 export default function FAQSection() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-gray-light">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">
-            Frequently Asked Questions <span className="text-red-500">  FAQ&apos;s </span>
+          <h2 className="text-4xl font-extrabold text-black mb-4">
+            Frequently Asked Questions <span className="text-primary">  FAQ&apos;s </span>
           </h2>
-          <p className="text-slate-500">Everything you need to know about our process.</p>
+          <p className="text-gray-dark">Everything you need to know about our process.</p>
         </div>
 
         <div className="space-y-4">

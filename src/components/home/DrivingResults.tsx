@@ -1,24 +1,24 @@
 import React from 'react';
 
 const features = [
-  { title: "Quality Driven Approach", icon: "🏆", hoverIcon: "🥇", color: "group-hover:bg-yellow-100" },
-  { title: "Transparent Work Culture", icon: "🤝", hoverIcon: "💎", color: "group-hover:bg-red-100" },
-  { title: "High Standards For Customer Service", icon: "📞", hoverIcon: "🎧", color: "group-hover:bg-green-100" },
-  { title: "Passion For Perfection", icon: "✨", hoverIcon: "🚀", color: "group-hover:bg-purple-100" },
-  { title: "Innovative Thinking", icon: "💡", hoverIcon: "🔥", color: "group-hover:bg-orange-100" },
-  { title: "Problem Solving Skills", icon: "🧩", hoverIcon: "⚙️", color: "group-hover:bg-indigo-100" },
-  { title: "Commitment to Timely Delivery", icon: "⏱️", hoverIcon: "⚡", color: "group-hover:bg-red-100" },
-  { title: "Focus on Long Term Relationships", icon: "❤️", hoverIcon: "♾️", color: "group-hover:bg-pink-100" },
+  { title: "Quality Driven Approach", icon: "🏆", hoverIcon: "🥇", color: "primary" },
+  { title: "Transparent Work Culture", icon: "🤝", hoverIcon: "💎", color: "black" },
+  { title: "High Standards For Customer Service", icon: "📞", hoverIcon: "🎧", color: "primary" },
+  { title: "Passion For Perfection", icon: "✨", hoverIcon: "🚀", color: "black" },
+  { title: "Innovative Thinking", icon: "💡", hoverIcon: "🔥", color: "primary" },
+  { title: "Problem Solving Skills", icon: "🧩", hoverIcon: "⚙️", color: "black" },
+  { title: "Commitment to Timely Delivery", icon: "⏱️", hoverIcon: "⚡", color: "primary" },
+  { title: "Focus on Long Term Relationships", icon: "❤️", hoverIcon: "♾️", color: "black" },
 ];
 
 export default function ResultsSection() {
   return (
-    <section className="bg-slate-200 py-20 px-6 font-sans">
+    <section className="bg-gray-light py-20 px-6 font-sans">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
           Driving Results That Matter
         </h2>
-        <p className="text-slate-600 max-w-2xl mx-auto mb-12">
+        <p className="text-gray-dark max-w-2xl mx-auto mb-12">
           Turning ideas into meaningful achievements through our core values.
         </p>
 
@@ -28,15 +28,15 @@ export default function ResultsSection() {
               key={index} 
               // Added suppressHydrationWarning to handle extension attributes like bis_skin_checked
               suppressHydrationWarning={true}
-              className="group relative bg-white p-10 rounded-2xl shadow-sm border border-slate-100 
+              className="group relative bg-white p-10 rounded-2xl shadow-sm border border-gray-light 
                          hover:shadow-xl hover:-translate-y-1 transition-all duration-500 cursor-pointer 
                          flex flex-col items-center justify-center overflow-hidden"
             >
               {/* Animated Icon Container */}
               <div 
                 suppressHydrationWarning={true}
-                className={`w-20 h-20 mb-6 rounded-full bg-slate-50 flex items-center justify-center 
-                            transition-all duration-500 transform group-hover:rotate-12 ${item.color}`}
+                className={`w-20 h-20 mb-6 rounded-full bg-gray-light flex items-center justify-center 
+                            transition-all duration-500 transform group-hover:rotate-12 group-hover:text-white ${item.color === 'primary' ? 'group-hover:bg-primary' : 'group-hover:bg-black'}`}
               >
                 
                 {/* Initial Icon */}
@@ -50,14 +50,14 @@ export default function ResultsSection() {
                 </span>
               </div>
 
-              <h3 className="text-slate-700 font-bold text-sm uppercase tracking-wide group-hover:text-red-600 transition-colors">
+              <h3 className={`text-gray-dark font-bold text-sm uppercase tracking-wide transition-colors ${item.color === 'primary' ? 'group-hover:text-black' : 'group-hover:text-primary'}`}>
                 {item.title}
               </h3>
               
               {/* Bottom decorative bar */}
               <div 
                 suppressHydrationWarning={true}
-                className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-red-500 transition-all duration-500" 
+                className={`absolute bottom-0 left-0 w-full h-1 bg-transparent transition-all duration-500 ${item.color === 'primary' ? 'group-hover:bg-primary' : 'group-hover:bg-black'}`} 
               />
             </div>
           ))}

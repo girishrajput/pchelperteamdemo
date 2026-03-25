@@ -6,9 +6,9 @@ const contactData = [
   {
     title: " 2370 Westwood Blvd Ste F Los Angeles, CA 90064",
     icon: <MapPin className="w-8 h-8 text-white" />,
-    gradient: "from-red-600 to-indigo-600",
+    gradient: "bg-primary",
     content: (
-      <p className="text-gray-500 text-sm leading-relaxed">
+      <p className="text-gray-dark text-sm leading-relaxed">
         Come visit us any time from 11 AM to 4 PM, from Monday to Friday, or by appointment outside of those hours.
       </p>
     ),
@@ -16,9 +16,9 @@ const contactData = [
   {
     title: "(310) 360-5060",
     icon: <Phone className="w-8 h-8 text-white" />,
-    gradient: "from-green-400 to-emerald-500",
+    gradient: "bg-black",
     content: (
-      <div className="text-gray-500 text-sm space-y-1">
+      <div className="text-gray-dark text-sm space-y-1">
         <p>You can reach us by phone 24/7, including weekends and holidays.</p>
       </div>
     ),
@@ -26,11 +26,11 @@ const contactData = [
   {
     title: "info@pchelperteam.com",
     icon: <Mail className="w-8 h-8 text-white" />,
-    gradient: "from-purple-400 to-pink-500",
+    gradient: "bg-primary",
     content: (
       <div className="text-sm">
 
-        <p className="text-gray-500 mt-1">
+        <p className="text-gray-dark mt-1">
           We will respond to your email within 30 minutes on business days.
         </p>
       </div>
@@ -48,14 +48,14 @@ const Contact = () => {
       />
 
       <section>
-        <div className="bg-gray-50 py-16 px-4">
+        <div className="bg-gray-light py-16 px-4">
           <div className="max-w-6xl mx-auto">
 
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-                How Can We  <span className="text-red-500">Help?</span>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-black tracking-tight">
+                How Can We  <span className="text-primary">Help?</span>
               </h2>
-              <p className="mt-5 text-lg text-slate-600 max-w-3xl mx-auto">
+              <p className="mt-5 text-lg text-gray-dark max-w-3xl mx-auto">
                 Talk to one of our consultants today to learn how we can help you with your technology needs!
               </p>
             </div>
@@ -63,15 +63,15 @@ const Contact = () => {
               {contactData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-10 shadow-sm border border-gray-100 flex flex-col items-center text-center transition-transform hover:scale-105"
+                  className="bg-white rounded-3xl p-10 shadow-sm border border-gray-light flex flex-col items-center text-center transition-transform hover:scale-105"
                 >
                   {/* Icon Container with Shadow and Gradient */}
-                  <div className={`mb-8 p-5 rounded-full bg-linear-to-br ${item.gradient} shadow-xl shadow-indigo-100`}>
+                  <div className={`mb-8 p-5 rounded-full ${item.gradient} shadow-xl`}>
                     {item.icon}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-xl font-bold text-black mb-4">
                     {item.title}
                   </h3>
 

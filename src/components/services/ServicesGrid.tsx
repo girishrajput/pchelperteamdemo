@@ -55,22 +55,22 @@ export default function ServicesGrid() {
                 animate={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.4 }}
-                className="relative h-full bg-white p-12 flex flex-col items-center text-center border border-zinc-200 hover:border-red-600 transition-all duration-500 shadow-sm hover:shadow-2xl"
+                className="relative h-full bg-white p-12 flex flex-col items-center text-center border border-gray-light hover:border-primary transition-all duration-500 shadow-sm hover:shadow-2xl"
               >
                 {/* Corner Brackets */}
-                <div className="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-red-600" />
-                <div className="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-red-600 transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-red-600/10" />
+                <div className="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-primary" />
+                <div className="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-primary transition-all duration-500 group-hover:w-full group-hover:h-full group-hover:border-primary/10" />
 
                 {/* Icon */}
-                <div className="mb-8 text-red-600 group-hover:scale-110 transition-transform duration-500">
+                <div className="mb-8 text-primary group-hover:scale-110 transition-transform duration-500">
                   <IconComponent size={48} strokeWidth={1.5} />
                 </div>
 
-                <h3 className="text-xl font-black text-black mb-4 leading-tight uppercase tracking-widest group-hover:text-red-600 transition-colors">
+                <h3 className="text-xl font-black text-black mb-4 leading-tight uppercase tracking-widest group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
 
-                <p className="text-zinc-500 font-medium leading-relaxed text-sm group-hover:text-black transition-colors">
+                <p className="text-gray-dark font-medium leading-relaxed text-sm group-hover:text-black transition-colors">
                   {item.desc}
                 </p>
               </motion.div>

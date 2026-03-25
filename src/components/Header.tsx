@@ -49,7 +49,7 @@ const Header = () => {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="hover:text-red-600 transition-colors duration-200"
+                  className="hover:text-primary transition-colors duration-200"
                 >
                   {link.name}
                 </Link>
@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <Link
                 href="/contact"
-                className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-all font-bold"
+                className="bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-black transition-all font-bold"
               >
                 Book Free Consultation
               </Link>
@@ -103,7 +103,7 @@ const Header = () => {
               <Link
                 href="/contact"
                 onClick={() => setIsMobileOpen(false)}
-                className="block bg-red-600 text-white text-center py-4 rounded-xl shadow-lg active:scale-95 transition-transform"
+                className="block bg-primary text-white text-center py-4 rounded-xl shadow-lg active:scale-95 transition-transform"
               >
                 Book Free Consultation
               </Link>
