@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 // Added Facebook, Twitter (for X), Instagram, and Linkedin
 import Image from 'next/image';
-import { Phone, Printer, MapPin, Send, Share2, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Printer, MapPin, Send, Share2, Facebook, X, Instagram, Linkedin } from 'lucide-react';
 import ContactSection from './home/ContactSection';
 
 const SERVICES_LINKS = [
@@ -30,7 +30,7 @@ const QUICK_LINKS = [
 // 1. Updated Social Links with Lucide Components
 const SOCIAL_LINKS = [
   { name: "Facebook", href: "https://facebook.com", icon: <Facebook size={18} /> },
-  { name: "X", href: "https://x.com", icon: <Twitter size={18} /> }, // Lucide uses Twitter for X
+  { name: "X", href: "https://x.com", icon: <X size={18} /> }, // Lucide uses Twitter for X
   { name: "Instagram", href: "https://instagram.com", icon: <Instagram size={18} /> },
   { name: "LinkedIn", href: "https://linkedin.com", icon: <Linkedin size={18} /> },
   { name: "Tumblr", href: "https://tumblr.com", icon: <span className="text-lg italic font-serif">t</span> },

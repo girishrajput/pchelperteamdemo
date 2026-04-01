@@ -32,7 +32,7 @@ const Header = () => {
         {/* Logo - Ensure /public/images/pc-helper-logo.png exists */}
         <Link href="/" className="relative">
           <Image
-            src="/images/pc-helper-logo.png"
+            src="/images/pchelper-logo.png"
             className="w-full h-auto"
             width={140}
             height={50}
