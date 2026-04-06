@@ -89,8 +89,8 @@ export const SERVICE_DATA = {
       icon: Network 
     },
     { 
-      title: "Data Destruction", 
-      desc: "Secure your information with professional data destruction and formatting.", 
+      title: "Data Destruction & Medium Formatting", 
+      desc: "Secure Your Information with Professional Data Destruction & Formatting through Department of Defense regulations and standards!", 
       color: "primary", 
       icon: DatabaseZap 
     },

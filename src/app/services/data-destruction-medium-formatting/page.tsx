@@ -7,9 +7,9 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Data & Cyber Security",
-    subtitle: "Protect Your Business with Top-Notch Data & Cyber Security",
-    heroImage: "/services/data-and-cyber-security.webp",
+    title: "Data Destruction & Formatting",
+    subtitle: "Secure Your Information with Professional Data Destruction & Formatting",
+    heroImage: "/services/data-destruction-and-formatting.webp",
     features: [
       {
         icon: Settings,

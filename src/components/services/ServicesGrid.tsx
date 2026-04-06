@@ -7,12 +7,12 @@ import { Network, Headset, Cloud, Settings, HardDrive, Layout } from 'lucide-rea
 const SERVICE_DATA = [
   {
     title: "Network",
-    desc: "As cloud services rely on networks, PCHelperTeam's IT network monitoring and control services are now essential for IT.",
+    desc: "As cloud services rely on networks, PCHelperTeam’s IT network monitoring and control services are now essential for IT.",
     icon: Network,
   },
   {
     title: "Help Desk",
-    desc: "Maximizing service effectiveness, fixing issues, and promoting ongoing service innovation are PCHelperTeam's round-the-clock support goals.",
+    desc: "Maximizing service effectiveness, fixing issues, and promoting ongoing service innovation are PCHelperTeam’s round-the-clock support goals.",
     icon: Headset,
   },
   {
