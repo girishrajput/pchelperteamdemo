@@ -135,7 +135,18 @@ export const SERVICE_DATA = {
   ]
 };
 
-const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+// const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+const slugify = (text: string): string => {
+  return text
+    .toLowerCase()
+    .trim()
+    .normalize('NFD') // split accented characters
+    .replace(/[\u0300-\u036f]/g, '') // remove accents
+    .replace(/\s+/g, '-') // spaces → hyphen
+    .replace(/[^\w-]+/g, '') // remove special chars
+    .replace(/-+/g, '-') // collapse multiple hyphens
+    .replace(/^-+|-+$/g, ''); // trim hyphens from start/end
+};
 
 export default function CreativeTabs() {
   // 2. Fixed variable reference from DATA to SERVICE_DATA
