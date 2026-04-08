@@ -18,42 +18,13 @@ const Download = () => {
 
             {/* Left Column: Content */}
             <div className="max-w-xl">
-              <h2 className="text-lg font-semibold leading-7 text-primary uppercase tracking-wide">
-                Secure Downloads
+              <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-black sm:text-5xl">
+                Get free, legal, recommended and supported software
+                here, now!
               </h2>
-              <p className="mt-2 text-4xl font-extrabold tracking-tight text-black sm:text-5xl">
-                Get free, legal, and supported software <span className="text-primary">here, now!</span>
-              </p>
               <p className="mt-6 text-lg leading-8 text-gray-dark">
-                Excited? You can download many of our recommended and supported full version applications.
-                Everything we recommend satisfies the highest security and legal criteria.
+                Excited? You can download many of our recommended and supported full version applications. Everything we recommend satisfy the criteria of being fully licensed and legal, most are free of charge. Also, every application and software we recommend and work with is free of bundles, nagware, bloatware, malware, salesware, viruses, worms and trojans. We recommend applications that are complete, never expire and have full life time update and upgrade rights.
               </p>
-
-              {/* Feature List (Makes the long text scannable) */}
-              <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-dark lg:max-w-none">
-                {[
-                  '100% Licensed & Legal',
-                  'Free of nagware, bloatware & malware',
-                  'Complete versions that never expire',
-                  'Lifetime updates & upgrade rights'
-                ].map((feature) => (
-                  <div key={feature} className="relative pl-9">
-                    <dt className="inline font-semibold text-black">
-                      <span className="absolute left-1 top-1 h-5 w-5 text-primary">✓</span>
-                      {feature}
-                    </dt>
-                  </div>
-                ))}
-              </dl>
-
-              <div className="mt-10 flex items-center gap-x-6">
-                <a href="#" className="rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black transition-colors">
-                  Browse Applications
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div>
             </div>
 
             {/* Right Column: Visual */}

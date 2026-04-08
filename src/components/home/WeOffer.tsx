@@ -3,134 +3,169 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { 
-  Cable, 
-  Cloud, 
-  HeartHandshake, 
-  Cpu, 
-  Smartphone, 
-  Settings2, 
-  FileJson, 
-  ShieldCheck, 
-  MonitorSmartphone, 
-  Network, 
-  DatabaseZap, 
-  Zap, 
-  BarChart3, 
-  Laptop, 
-  Layers, 
-  Recycle, 
-  PhoneCall
+import {
+  Cable,
+  Cloud,
+  HeartHandshake,
+  Cpu,
+  Smartphone,
+  Settings2,
+  FileJson,
+  ShieldCheck,
+  MonitorSmartphone,
+  Network,
+  DatabaseZap,
+  Zap,
+  BarChart3,
+  Laptop,
+  Layers,
+  Recycle,
+  PhoneCall,
+  BrainCircuit,
+  Settings,
+  Wrench,
+  AlertTriangle,
+  RefreshCw,
+  Upload,
+  Share2,
+  ArrowLeftRight,
+  KeyRound,
+  Trash2,
+  MonitorCog,
+  Server,
+  PackageCheck
 } from "lucide-react";
 
 // 1. Unified Data Object
 export const SERVICE_DATA = {
   Infrastructure: [
-    { 
-      title: "Cabling Wiring & Dressing", 
-      desc: "Ensure reliable connectivity with professional cabling and wiring according to policy.", 
-      color: "primary", 
+    {
+      title: "IT & Server Rooms",
+      desc: "Your Operations with Professional IT & Server Room Management",
+      color: "primary",
+      icon: Server 
+    },
+    {
+      title: "Cabling Wiring & Dressing",
+      desc: "Ensure Reliable Connectivity with Professional Cabling & Wiring & Dressing according to Company Policy and Insurance and City Code",
+      color: "black",
       icon: Cable 
     },
-    { 
-      title: "Hardware & Software Upgrades", 
-      desc: "Enhance your business with expert hardware and software system upgrades.", 
-      color: "black", 
-      icon: Cpu 
+    {
+      title: "PBX & VoIP Systems",
+      desc: "Optimise Communication with Expert PBX & VoIP Systems",
+      color: "primary",
+      icon: PhoneCall 
     },
-    { 
-      title: "Refurbished & Used Equipment", 
-      desc: "Value with high-quality refurbished and used equipment with in-house warranties.", 
-      color: "primary", 
-      icon: Settings2 
+    {
+      title: "Refurbished & Used Equipment",
+      desc: "Value with High-Quality Refurbished & Used Equipment all with in-house warranties and guarantees",
+      color: "black",
+      icon: PackageCheck 
     },
-    { 
-      title: "Loaner Systems & Support", 
-      desc: "Stay productive with our loaner systems and temporary hardware support.", 
-      color: "black", 
-      icon: Laptop 
-    },
-    { 
-      title: "Recycling", 
-      desc: "Support sustainability with our expert hardware recycling and disposal services.", 
-      color: "primary", 
+    {
+      title: "Recycling",
+      desc: "Support Sustainability with Expert IT Recycling Services",
+      color: "primary",
       icon: Recycle 
     },
-    { 
-      title: "PBX & VoIP Systems", 
-      desc: "Optimize communication with expert PBX and VoIP system installations.", 
-      color: "black", 
-      icon: PhoneCall 
+    {
+      title: "Charity & Reuse",
+      desc: "Make a Difference with Charity & Reuse, we support many local and national charity organisations!",
+      color: "black",
+      icon: HeartHandshake 
     }
   ],
   SecurityAndCloud: [
-    { 
-      title: "Cloud Access", 
-      desc: "Enhance your business with secure cloud access anywhere, anytime from any device.", 
-      color: "primary", 
-      icon: Cloud 
-    },
-    { 
-      title: "Data & Cyber Security", 
-      desc: "Protect your business with top-notch data and cyber security across all platforms.", 
-      color: "black", 
+    {
+      title: "Data & Cyber Security",
+      desc: "Protect Your Business with Top-Notch Data & Cyber Security across all mediums and devices and platforms!",
+      color: "primary",
       icon: ShieldCheck 
     },
-    { 
-      title: "Formatting & Data Import", 
-      desc: "Streamline your business with efficient data import, export, and formatting.", 
-      color: "primary", 
-      icon: FileJson 
+    {
+      title: "Cloud Access",
+      desc: "Enhance Your Business with Secure Cloud Access anywhere anytime from any type of device!",
+      color: "black",
+      icon: Cloud 
     },
-    { 
-      title: "Data Flow & Access", 
-      desc: "Optimize your operations with efficient data flow and structured access.", 
-      color: "black", 
-      icon: Network 
+    {
+      title: "Data Recovery & Password Retrieval",
+      desc: "Secure Your Information with Reliable Data Recovery & Retrieval",
+      color: "primary",
+      icon: KeyRound 
     },
-    { 
-      title: "Data Destruction & Medium Formatting", 
-      desc: "Secure Your Information with Professional Data Destruction & Formatting through Department of Defense regulations and standards!", 
-      color: "primary", 
-      icon: DatabaseZap 
+    {
+      title: "Data Destruction & Medium Formatting",
+      desc: "Optimize your operations with efficient data flow and structured access.",
+      color: "black",
+      icon: Trash2 
     },
-    { 
-      title: "Managed IT Solutions", 
-      desc: "Streamline your operations with our comprehensive and managed IT solutions.", 
-      color: "black", 
-      icon: Layers 
+    {
+      title: "Device & Asset Management",
+      desc: "Secure Your Information with Professional Data Destruction & Formatting through Department of Defense regulations and standards!",
+      color: "primary",
+      icon: MonitorCog 
     }
   ],
   SupportAndStrategy: [
-    { 
-      title: "IT Strategy & Planning", 
-      desc: "Elevate your business with a strategic IT plan tailored to your goals.", 
-      color: "primary", 
-      icon: BarChart3 
+    {
+      title: "IT Strategy & Planning",
+      desc: "Elevate Your Business with a Strategic IT Plan",
+      color: "primary",
+      icon: BrainCircuit
     },
-    { 
-      title: "Emergency Response", 
-      desc: "Get immediate help with our emergency and urgent IT response services.", 
-      color: "black", 
-      icon: Zap 
+    {
+      title: "Managed IT Solutions",
+      desc: "Streamline Your Operations with Comprehensive Managed IT Solutions",
+      color: "black",
+      icon: Settings
     },
-    { 
-      title: "Mobile & Cellphone Support", 
-      desc: "Keep connected with expert mobile and cellphone support for your team.", 
-      color: "primary", 
-      icon: Smartphone 
+    {
+      title: "Computer Repair / PC & Mac",
+      desc: "Keep Your Business Running Smoothly with Multi-Layered Backup Systems & Redundancy Measures to allow users access your vital information even in disastrous situations.",
+      color: "primary",
+      icon: Wrench
     },
-    { 
-      title: "Device & Asset Management", 
-      desc: "Track and manage your operations with effective device and asset management.", 
-      color: "black", 
-      icon: MonitorSmartphone 
+    {
+      title: "Emergency & Urgent Response",
+      desc: "Get Immediate Help with Our Emergency & Urgent Response Services.",
+      color: "black",
+      icon: AlertTriangle
     },
-    { 
-      title: "Charity & Reuse", 
-      desc: "Make a difference with charity and reuse; we support local organizations.", 
-      color: "primary", 
-      icon: HeartHandshake 
+    {
+      title: "Mobile & Cellphone Support",
+      desc: "Keep Connected with Expert Mobile & Cellphone Support",
+      color: "primary",
+      icon: Smartphone
+    }
+    ,
+    {
+      title: "Loaner Systems & Temporary Support",
+      desc: "Stay Productive with Our Loaner Systems & Temporary Support",
+      color: "black",
+      icon: RefreshCw
+    }
+    ,
+    {
+      title: "Hardware & Software Upgrades",
+      desc: "Enhance Your Business with Expert Hardware & Software Upgrades.",
+      color: "primary",
+      icon: Upload
+    }
+    ,
+    {
+      title: "Data Flow & Access",
+      desc: "Your Operations with Efficient Data Flow & Access.",
+      color: "black",
+      icon: Share2
+    }
+    ,
+    {
+      title: "Formatting Data Import Export",
+      desc: "Streamline Your Business with Efficient Data Import & Export.",
+      color: "primary",
+      icon: ArrowLeftRight
     }
   ]
 };
@@ -171,15 +206,15 @@ export default function CreativeTabs() {
                 className={`relative px-4 md:px-8 py-3 text-xs md:text-sm font-bold uppercase tracking-widest transition-colors duration-300 whitespace-nowrap ${activeTab === tab ? 'text-white' : 'text-gray-dark hover:text-black'}`}
               >
                 {activeTab === tab && (
-                  <motion.div 
-                    layoutId="activeTab" 
-                    className="absolute inset-0 bg-primary rounded-xl shadow-lg" 
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }} 
+                  <motion.div
+                    layoutId="activeTab"
+                    className="absolute inset-0 bg-primary rounded-xl shadow-lg"
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}
                 <span className="relative z-10">
-                    {/* Add spacing to camelCase keys for display */}
-                    {tab.replace(/([A-Z])/g, ' $1').trim()}
+                  {/* Add spacing to camelCase keys for display */}
+                  {tab.replace(/([A-Z])/g, ' $1').trim()}
                 </span>
               </button>
             ))}
@@ -187,15 +222,15 @@ export default function CreativeTabs() {
         </div>
 
         {/* Content Grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <AnimatePresence mode="popLayout">
             {SERVICE_DATA[activeTab].map((item) => {
               // Extract the icon component correctly
               const IconComponent = item.icon;
 
               return (
-                <Link 
-                  key={item.title} 
+                <Link
+                  key={item.title}
                   href={`/services/${slugify(item.title)}`}
                   className="block group"
                 >
@@ -209,7 +244,7 @@ export default function CreativeTabs() {
                   >
                     {/* Background Decorative Circle */}
                     <div className={`absolute -right-4 -top-4 w-24 h-24 rounded-full group-hover:scale-150 transition-transform duration-700 ${item.color === 'primary' ? 'bg-primary' : 'bg-black'} opacity-10`} />
-                    
+
                     {/* Icon Container */}
                     <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg group-hover:rotate-6 transition-transform ${item.color === 'primary' ? 'bg-primary' : 'bg-black'}`}>
                       {typeof IconComponent === 'string' ? (

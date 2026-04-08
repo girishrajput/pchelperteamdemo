@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Data & Cyber Security",
-    subtitle: "Protect Your Business with Top-Notch Data & Cyber Security",
-    heroImage: "/services/data-and-cyber-security.webp",
+    title: "Cloud Access",
+    subtitle: "Enhance Your Business with Secure Cloud Access",
+    heroImage: "/services/cloud-access.webp",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your security needs. Our skilled professionals implement the latest security measures to protect your data and systems."
+        description: "With PCHelperTeam, you get quick access to expert IT support for all your cloud needs. Our skilled professionals ensure your cloud systems are set up correctly and running efficiently."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your security measures are always up-to-date and effective."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your cloud access remains smooth and uninterrupted."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like peace of mind knowing your business is safe from cyber threats? No worries about data breaches, hacking attempts, or security vulnerabilities. Imagine feeling confident that your sensitive information is well-protected.</p>
-                <p>That’s what you get with PCHelperTeam. We offer comprehensive data and cyber security solutions to keep your business secure.</p>
+                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
+                <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
               </>
             }
             features={pageData.features}
