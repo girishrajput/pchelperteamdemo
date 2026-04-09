@@ -16,19 +16,19 @@ const slides = [
     id: 1,
     title: "Any Computer Problem",
     desc: "Free 24/7 Hotline",
-    video: "/video/banner-1.mp4",
+    video: "/video/banner.mp4",
   },
   {
     id: 2,
     title: "Complete IT Solutions",
     desc: "Your Home or Office",
-    video: "/video/banner-2.mp4",
+    video: "/video/banner.mp4",
   },
   {
     id: 3,
     title: "Anywhere in LA",
     desc: "Support NOW!",
-    video: "/video/banner-1.mp4",
+    video: "/video/banner.mp4",
   },
 ];
 
