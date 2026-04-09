@@ -10,7 +10,7 @@ const ServicesPage = () => {
                 title="Our Services"
                 subtitle="Comprehensive solutions tailored to your business needs."
             />
-<WeOffer />
+            <WeOffer />
             
         </>
     );

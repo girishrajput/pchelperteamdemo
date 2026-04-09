@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "IT & Server Rooms",
-    subtitle: "Optimize Your Operations with Professional IT & Server Room Management",
-    heroImage: "/services/it-and-server-rooms.webp",
+    title: "Data Recovery & Retrieval",
+    subtitle: "Secure Your Information with Reliable Data Recovery & Retrieval",
+    heroImage: "/services/data-recovery-and-retrieval.webp",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your IT and server room needs. Our skilled professionals ensure your server rooms are properly configured, maintained, and optimized for performance."
+        description: "With PCHelperTeam, you get quick access to expert IT support for all your data recovery and retrieval needs. Our skilled professionals use advanced techniques to recover your lost data efficiently."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your IT and server rooms are running efficiently, with minimal downtime and maximum reliability."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your data is recovered quickly and securely, minimizing downtime and data loss."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like to ensure your IT and server rooms are organized and running smoothly? No more worries about equipment failures or inefficient setups. Imagine feeling confident that your IT infrastructure is well-managed and operating at peak efficiency.</p>
-                <p>That’s what you get with PCHelperTeam. We provide expert IT and server room management services to keep your critical infrastructure in top condition.</p>
+                <p>Would you like peace of mind knowing your important data can be recovered even after an unexpected loss? No worries about accidental deletions or system failures. Imagine feeling confident that your valuable information is always retrievable.</p>
+                <p>That’s what you get with PCHelperTeam. We offer professional data recovery and retrieval services to ensure your critical data is never lost.</p>
               </>
             }
             features={pageData.features}

@@ -2,6 +2,7 @@
 
 import { Mail, Phone, MessageSquare, User } from 'lucide-react';
 import { sendEmail } from '../../app/actions';
+import Link from 'next/link';
 
 export default function ContactSection() {
 
@@ -16,6 +17,13 @@ export default function ContactSection() {
 
   // Common styles for inputs to keep the code clean
   const inputStyles = "w-full p-3 rounded-lg border border-gray-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-gray-light";
+
+  const socialLinks = [
+    { Icon: Mail, href: "mailto:info@pchelperteam.com", label: "Email" },
+    { Icon: Phone, href: "tel:+13103605060", label: "Phone" },
+    { Icon: MessageSquare, href: "https://wa.me/+13103605060", label: "WhatsApp" },
+    { Icon: User, href: "/contact", label: "Profile" },
+  ];
 
   return (
     <section className="bg-gray-light py-20 px-6 lg:px-12 min-h-screen flex items-center">
@@ -33,15 +41,17 @@ export default function ContactSection() {
           </p>
 
           <div className="flex gap-4">
-            {[Mail, Phone, MessageSquare, User].map((Icon, idx) => (
-              <div
-                key={idx}
-                className="w-12 h-12 rounded-full border border-gray-light flex items-center justify-center text-gray-dark hover:text-primary hover:border-primary hover:bg-white transition-all cursor-pointer shadow-sm"
-              >
-                <Icon size={20} strokeWidth={1.5} />
-              </div>
-            ))}
-          </div>
+      {socialLinks.map(({ Icon, href, label }, idx) => (
+        <Link
+          key={idx}
+          href={href}
+          aria-label={label}
+          className="w-12 h-12 rounded-full border border-gray-light flex items-center justify-center text-gray-dark hover:text-primary hover:border-primary hover:bg-white transition-all cursor-pointer shadow-sm"
+        >
+          <Icon size={20} strokeWidth={1.5} />
+        </Link>
+      ))}
+    </div>
         </div>
 
         {/* Right Side: Contact Form Card */}

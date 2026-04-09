@@ -1,6 +1,6 @@
 import HeroSlider from '@/components/home/HeroSlider'
 import WeOffer from '@/components/home/WeOffer'
-import DrivingResults from '@/components/home/DrivingResults'    
+import AboutSection from '@/components/home/AboutSection'    
 import Industries from '@/components/home/Industries'   
 import OurPartners from '@/components/home/OurPartners'
 import WhyPCHelper from '@/components/home/WhyPCHelper'
@@ -16,10 +16,11 @@ export default function HomePage() {
   return (
     <main>
       <HeroSlider />
+      <AboutSection />
       <WeOffer />
       <OurPartners />
       <WhyPCHelper />
-      <DrivingResults />
+      {/* <DrivingResults /> */}
       <Industries />
     </main>
   )

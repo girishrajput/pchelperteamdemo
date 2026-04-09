@@ -7,9 +7,9 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "IT & Server Rooms",
-    subtitle: "Optimize Your Operations with Professional IT & Server Room Management",
-    heroImage: "/services/it-and-server-rooms.webp",
+    title: "IT Strategy",
+    subtitle: "Elevate Your Business with a Strategic IT Plan",
+    heroImage: "/services/it-strategy.webp",
     features: [
       {
         icon: Settings,

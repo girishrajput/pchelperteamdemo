@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "IT & Server Rooms",
-    subtitle: "Optimize Your Operations with Professional IT & Server Room Management",
-    heroImage: "/services/it-and-server-rooms.webp",
+    title: "Refurbished & Used Equipment",
+    subtitle: "Maximize Value with High-Quality Refurbished & Used Equipment",
+    heroImage: "/services/refurbished-and-used-equipment.webp",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your IT and server room needs. Our skilled professionals ensure your server rooms are properly configured, maintained, and optimized for performance."
+        description: "With PCHelperTeam, you get access to a wide selection of high-quality refurbished and used equipment. Our skilled professionals ensure that every item meets stringent performance and reliability standards before it reaches you."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your IT and server rooms are running efficiently, with minimal downtime and maximum reliability."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll help you find the right refurbished or used equipment to fit your needs, ensuring it performs reliably and efficiently."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like to ensure your IT and server rooms are organized and running smoothly? No more worries about equipment failures or inefficient setups. Imagine feeling confident that your IT infrastructure is well-managed and operating at peak efficiency.</p>
-                <p>That’s what you get with PCHelperTeam. We provide expert IT and server room management services to keep your critical infrastructure in top condition.</p>
+                <p>Would you like to equip your business with reliable technology while saving costs? No more overspending on new equipment or dealing with outdated technology. Imagine getting high-performance, refurbished, or used equipment that meets your needs at a fraction of the cost.</p>
+                <p>That’s what you get with PCHelperTeam. We offer a range of refurbished and used equipment solutions to help you get the best value for your technology investments.</p>
               </>
             }
             features={pageData.features}

@@ -14,12 +14,12 @@ const Page = () => {
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your security needs. Our skilled professionals implement the latest security measures to protect your data and systems."
+        description: "With PCHelperTeam, you get quick access to expert IT support for all your data destruction and formatting needs. Our skilled professionals use industry-standard methods to securely erase your data."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your security measures are always up-to-date and effective."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your data is thoroughly destroyed, ensuring your information remains private."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like peace of mind knowing your business is safe from cyber threats? No worries about data breaches, hacking attempts, or security vulnerabilities. Imagine feeling confident that your sensitive information is well-protected.</p>
-                <p>That’s what you get with PCHelperTeam. We offer comprehensive data and cyber security solutions to keep your business secure.</p>
+                <p>Would you like peace of mind knowing your old data is completely erased and unrecoverable? No worries about sensitive information falling into the wrong hands. Imagine feeling secure that your data is properly destroyed and your devices are ready for reuse or disposal.</p>
+                <p>That’s what you get with PCHelperTeam. We offer reliable data destruction and formatting services to ensure your information is securely erased.</p>
               </>
             }
             features={pageData.features}

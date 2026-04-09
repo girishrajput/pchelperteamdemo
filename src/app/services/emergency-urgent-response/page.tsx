@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Cloud Access",
-    subtitle: "Enhance Your Business with Secure Cloud Access",
-    heroImage: "/services/cloud-access.webp",
+    title: "Emergency & Urgent Response",
+    subtitle: "Get Immediate Help with Our Emergency & Urgent Response Services",
+    heroImage: "/services/emergency-and-urgent-response.jpg",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your cloud needs. Our skilled professionals ensure your cloud systems are set up correctly and running efficiently."
+        description: "With PCHelperTeam, you get quick access to expert IT support for any urgent issues. Our skilled professionals are ready to tackle emergencies and get your systems back on track."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your cloud access remains smooth and uninterrupted."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll respond immediately to resolve your urgent IT problems and minimize downtime."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
-                <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
+                <p>Would you like the peace of mind that comes with knowing help is always available in an emergency? No more stress about unexpected IT issues disrupting your business. Imagine feeling secure that any urgent problem will be handled swiftly and efficiently.</p>
+                <p>That’s what you get with PCHelperTeam. We offer rapid emergency and urgent response services to address your critical IT needs.</p>
               </>
             }
             features={pageData.features}

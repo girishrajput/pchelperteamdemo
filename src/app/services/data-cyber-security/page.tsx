@@ -7,9 +7,9 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Cloud Access",
-    subtitle: "Enhance Your Business with Secure Cloud Access",
-    heroImage: "/services/cloud-access.webp",
+    title: "Data & Cyber Security",
+    subtitle: "Protect Your Business with Top-Notch Data & Cyber Security",
+    heroImage: "/services/data-and-cyber-security.webp",
     features: [
       {
         icon: Settings,
@@ -34,7 +34,7 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
+                <p>Would you like peace of mind knowing your business is safe from cyber threats? No worries about data breaches, hacking attempts, or security vulnerabilities. Imagine feeling confident that your sensitive information is well-protected.</p>
                 <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
               </>
             }

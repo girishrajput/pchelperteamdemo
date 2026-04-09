@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Cloud Access",
-    subtitle: "Enhance Your Business with Secure Cloud Access",
-    heroImage: "/services/cloud-access.webp",
+    title: "Loaner Systems & Temporary Support",
+    subtitle: "Optimize Your Operations with Professional IT & Server Room Management",
+    heroImage: "/services/loaner-systems-temporary-support.jpg",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your cloud needs. Our skilled professionals ensure your cloud systems are set up correctly and running efficiently."
+        description: "With PCHelperTeam, you get quick access to loaner systems and temporary IT support. Our skilled professionals provide the resources you need to keep your operations going while your main systems are being serviced or upgraded."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your cloud access remains smooth and uninterrupted."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll ensure you have the necessary temporary solutions to maintain productivity and minimize downtime."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
-                <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
+                <p>Would you like to ensure your operations continue smoothly even when your primary systems are down? No more disruptions or productivity losses. Imagine having immediate access to loaner systems and temporary support whenever you need it.</p>
+                <p>That’s what you get with PCHelperTeam. We offer reliable loaner systems and temporary support solutions to keep your business running seamlessly during system repairs or upgrades.</p>
               </>
             }
             features={pageData.features}

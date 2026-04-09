@@ -65,7 +65,7 @@ const PCHelperLanding = () => {
           </div>
         </div>
 
-        <div className="p-4 md:p-0 md:flex items-center gap-4">
+        <div className="p-4 md:p-0 md:flex items-top gap-4">
           <div className="w-full md:w-1/4">
             <div className="text-center lg:text-left">
               <h3 className="text-xl font-bold mb-2">EXCELLENT</h3>

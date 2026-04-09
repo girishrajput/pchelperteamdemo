@@ -29,11 +29,11 @@ const QUICK_LINKS = [
 
 // 1. Updated Social Links with Lucide Components
 const SOCIAL_LINKS = [
-  { name: "Facebook", href: "https://facebook.com", icon: <Facebook size={18} /> },
-  { name: "X", href: "https://x.com", icon: <X size={18} /> }, // Lucide uses Twitter for X
-  { name: "Instagram", href: "https://instagram.com", icon: <Instagram size={18} /> },
-  { name: "LinkedIn", href: "https://linkedin.com", icon: <Linkedin size={18} /> },
-  { name: "Tumblr", href: "https://tumblr.com", icon: <span className="text-lg italic font-serif">t</span> },
+  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100081790486686#", icon: <Facebook size={18} /> },
+  { name: "X", href: "https://x.com/SoroushSabzi", icon: <X size={18} /> }, // Lucide uses Twitter for X
+  { name: "Instagram", href: "https://www.instagram.com/soroushsabzi/", icon: <Instagram size={18} /> },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/soroush-sabzi-0944a08/", icon: <Linkedin size={18} /> },
+  { name: "Tumblr", href: "https://www.trustpilot.com/", icon: <span className="text-lg italic font-serif">t</span> },
 ];
 
 const Footer = () => {

@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Cloud Access",
-    subtitle: "Enhance Your Business with Secure Cloud Access",
-    heroImage: "/services/cloud-access.webp",
+    title: "Data Flow & Access",
+    subtitle: "Optimize Your Operations with Efficient Data Flow & Access",
+    heroImage: "/services/data-flow-and-access.webp",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your cloud needs. Our skilled professionals ensure your cloud systems are set up correctly and running efficiently."
+        description: "With PCHelperTeam, you get quick access to expert IT support for all your data flow and access needs. Our skilled professionals ensure your systems are set up for optimal data movement and accessibility."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your cloud access remains smooth and uninterrupted."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your data flow remains efficient and your access is uninterrupted."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
-                <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
+                <p>Would you like smooth, uninterrupted access to your data across all your devices? No more slow data transfers or accessibility issues. Imagine feeling confident that your data flows seamlessly and is easily accessible whenever you need it.</p>
+                <p>That’s what you get with PCHelperTeam. We provide efficient data flow and access solutions to keep your business running smoothly.</p>
               </>
             }
             features={pageData.features}

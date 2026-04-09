@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Recycling",
-    subtitle: "Support Sustainability with Expert IT Recycling Services",
-    heroImage: "/services/recycling.webp",
+    title: "Computer Repair / PC & Mac",
+    subtitle: " Keep Your Business Running Smoothly with Multi-Layered Backup Systems & Redundancy Measures to allow users access your vital information even in disastrous situations.",
+    heroImage: "/services/computer-repair-pc-mac.jpg",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your IT and server room needs. Our skilled professionals ensure your server rooms are properly configured, maintained, and optimized for performance."
+        description: "With PCHelperTeam, you get quick access to expert IT support. Our skilled professionals can handle any tech emergency to keep your systems up and running."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your IT and server rooms are running efficiently, with minimal downtime and maximum reliability."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your team has the support they need to work efficiently."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like to ensure your old IT equipment is disposed of responsibly? No more concerns about e-waste harming the environment. Imagine feeling confident that your outdated devices are being recycled properly and sustainably.</p>
-                <p>That’s what you get with PCHelperTeam. We provide reliable IT recycling services to ensure your old technology is disposed of in an eco-friendly manner.</p>
+                <p>Would you like months without any IT issues? No problems with software updates, no downtime, and no worries about security breaches? Imagine feeling relaxed, knowing your IT systems are safe and sound.</p>
+                <p>That’s what you get with PCHelperTeam. We offer reliable backup and redundancy solutions to keep your business running smoothly.</p>
               </>
             }
             features={pageData.features}

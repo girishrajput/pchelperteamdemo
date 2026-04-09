@@ -7,19 +7,19 @@ import Solutions from '@/components/services/Solutions';
 
 const Page = () => {
   const pageData = {
-    title: "Cloud Access",
-    subtitle: "Enhance Your Business with Secure Cloud Access",
-    heroImage: "/services/cloud-access.webp",
+    title: "Hardware & Software Upgrades",
+    subtitle: "Enhance Your Business with Expert Hardware & Software Upgrades",
+    heroImage: "/services/hardware-software-upgrades.jpg",
     features: [
       {
         icon: Settings,
         title: "Expert IT Help",
-        description: "With PCHelperTeam, you get quick access to expert IT support for all your cloud needs. Our skilled professionals ensure your cloud systems are set up correctly and running efficiently."
+        description: "With PCHelperTeam, you get quick access to expert IT support for all your hardware and software upgrade needs. Our skilled professionals handle upgrades efficiently, ensuring minimal disruption to your operations."
       },
       {
         icon: Headset,
         title: "Reliable Support Anytime",
-        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll make sure your cloud access remains smooth and uninterrupted."
+        description: "Our trained IT professionals are available 24/7, every day of the year. Just give us a call, and we’ll manage your upgrades with precision, so your systems stay modern and reliable."
       }
     ]
   };
@@ -34,8 +34,8 @@ const Page = () => {
             heading={<>Stay Ahead of Problems</>}
             description={
               <>
-                <p>Would you like seamless access to your data from anywhere, at any time? No more worries about limited storage or data loss. Imagine feeling secure, knowing your important information is safely stored in the cloud.</p>
-                <p>That’s what you get with PCHelperTeam. We offer reliable cloud access solutions to keep your business data accessible and secure.</p>
+                <p>Would you like to ensure your technology stays up-to-date and runs smoothly? No more dealing with outdated hardware or software issues. Imagine feeling confident that your systems are always current and performing at their best.</p>
+                <p>That’s what you get with PCHelperTeam. We provide professional hardware and software upgrade services to keep your technology in top shape.</p>
               </>
             }
             features={pageData.features}
