@@ -6,16 +6,16 @@ import { Phone, Printer, MapPin, Send, Share2, Facebook, X, Instagram, Linkedin 
 import ContactSection from './home/ContactSection';
 
 const SERVICES_LINKS = [
-  { name: "Computer Repair / PC & Mac", href: "/services/computer-repair" },
+  { name: "Computer Repair / PC & Mac", href: "/services/computer-repair-pc-mac" },
   { name: "IT & Server Rooms", href: "/services/it-server-rooms" },
-  { name: "Data Recovery & Password Retrieval", href: "/services/data-recovery" },
-  { name: "Hardware & Software Upgrades", href: "/services/upgrades" },
-  { name: "Mobile & Cellphone Support", href: "/services/mobile-support" },
-  { name: "Refurbished & Used Equipment", href: "/shop/refurbished" },
-  { name: "Cabling Wiring & Dressing", href: "/services/cabling" },
-  { name: "Cloud Access", href: "/services/cloud" },
-  { name: "Charity & Reuse", href: "/charity" },
-  { name: "Formatting Data Import Export", href: "/services/data-management" },
+  { name: "Data Recovery & Password Retrieval", href: "/services/data-recovery-password-retrieval" },
+  { name: "Hardware & Software Upgrades", href: "/services/hardware-software-upgrades" },
+  { name: "Mobile & Cellphone Support", href: "/services/mobile-cellphone-support" },
+  { name: "Refurbished & Used Equipment", href: "/services/refurbished-used-equipment" },
+  { name: "Cabling Wiring & Dressing", href: "/services/cabling-wiring-dressing" },
+  { name: "Cloud Access", href: "/services/cloud-access" },
+  { name: "Charity & Reuse", href: "/services/charity-reuse" },
+  { name: "Formatting Data Import Export", href: "/services/formatting-data-import-export" },
 ];
 
 const QUICK_LINKS = [
