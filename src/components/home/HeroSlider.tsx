@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from 'next/link';
 
 // Import Swiper styles
@@ -35,18 +35,16 @@ const slides = [
 export default function HeroSlider() {
   const [mounted, setMounted] = useState(false);
 
-  // Fixes Hydration Mismatch by waiting for the client to mount
   useEffect(() => {
-    setMounted(true); // eslint-disable-line react-hooks/set-state-in-effect
+    setMounted(true);
   }, []);
 
   if (!mounted) {
-    // Optional: Return a black placeholder or a skeleton to prevent layout shift
     return <section className="relative w-full h-screen bg-black" />;
   }
 
   return (
-    <section className="relative w-full h-[calc(50vh-80px)] md:h-[calc(100vh-80px)] overflow-hidden">
+    <section className="relative w-full h-[calc(60vh-80px)] md:h-[calc(100vh-80px)] overflow-hidden bg-black">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -58,8 +56,8 @@ export default function HeroSlider() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative w-full h-full flex items-center justify-start">
-
+            <div className="relative w-full h-full flex items-center justify-center">
+              
               {/* Background Video */}
               <video
                 autoPlay
@@ -72,74 +70,65 @@ export default function HeroSlider() {
                 Your browser does not support the video tag.
               </video>
 
-              {/* Overlay for Readability */}
-              <div className="absolute inset-0 bg-black/40 z-[1]"></div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 z-[1]"></div>
 
-              {/* Animated Content */}
-              <div className="relative z-10 max-w-6xl mx-auto w-full px-8 md:px-12 text-white text-center">
+              {/* Content Container */}
+              <div className="relative z-10 max-w-7xl mx-auto w-full px-6 text-center">
                 <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  viewport={{ once: false }}
+                  initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+                  whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  {/* <h1 className="text-4xl md:text-7xl font-bold mb-4 tracking-tight">
-                    {slide.title}
-                  </h1> */}
-
-                  <h1 className="
-  /* 1. Font Family & Massive Size */
-  text-7xl md:text-8xl lg:text-[9rem] 
-  font-bold tracking-tight leading-[0.85]
-  
-  /* 2. 30% Transparent / Diffused Effect */
-  /* Using text-opacity with backdrop-blur for that Windows/Apple 'Mica' look */
-  text-white/30 backdrop-blur-md
-  
-  /* 3. Smooth Transition Logic */
-  transition-all duration-1000 ease-in-out transform
-  {slide.active ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 blur-xl'}
-">
+                  <h1 className="text-5xl md:text-8xl lg:text-[8rem] font-bold tracking-tight leading-[0.9] text-white/90 drop-shadow-2xl mb-6">
                     {slide.title}
                   </h1>
                 </motion.div>
 
                 <motion.p
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-                  viewport={{ once: false }}
-                  className="text-lg md:text-2xl mb-8 max-w-2xl text-gray-200 text-center mx-auto"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.8 }}
+                  className="text-lg md:text-2xl mb-10 max-w-2xl text-gray-200 mx-auto font-medium"
                 >
                   {slide.desc}
                 </motion.p>
 
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6, duration: 0.5 }}
-                  viewport={{ once: false }}
                 >
-                  <Link href="/contact" className="bg-primary hover:bg-black text-white px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg">
+                  <Link 
+                    href="/contact" 
+                    className="inline-block bg-[#ff0000] hover:bg-white hover:text-black text-white px-12 py-4 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-xl"
+                  >
                     Get Started
                   </Link>
                 </motion.div>
               </div>
-
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Global Styles for Swiper dots */}
+      {/* Custom Styles for Pagination */}
       <style jsx global>{`
         .swiper-pagination-bullet {
           background: white !important;
-          opacity: 0.5;
+          opacity: 0.4;
+          width: 12px;
+          height: 12px;
         }
         .swiper-pagination-bullet-active {
           background: #ff0000 !important;
           opacity: 1;
+          width: 30px;
+          border-radius: 6px;
+          transition: width 0.3s ease;
+        }
+        .swiper-pagination {
+          bottom: 30px !important;
         }
       `}</style>
     </section>
