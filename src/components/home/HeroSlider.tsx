@@ -59,7 +59,7 @@ export default function HeroSlider() {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="relative w-full h-full flex items-center justify-start">
-              
+
               {/* Background Video */}
               <video
                 autoPlay
@@ -83,7 +83,23 @@ export default function HeroSlider() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   viewport={{ once: false }}
                 >
-                  <h1 className="text-4xl md:text-7xl font-bold mb-4 tracking-tight">
+                  {/* <h1 className="text-4xl md:text-7xl font-bold mb-4 tracking-tight">
+                    {slide.title}
+                  </h1> */}
+
+                  <h1 className="
+  /* 1. Font Family & Massive Size */
+  text-7xl md:text-8xl lg:text-[9rem] 
+  font-bold tracking-tight leading-[0.85]
+  
+  /* 2. 30% Transparent / Diffused Effect */
+  /* Using text-opacity with backdrop-blur for that Windows/Apple 'Mica' look */
+  text-white/30 backdrop-blur-md
+  
+  /* 3. Smooth Transition Logic */
+  transition-all duration-1000 ease-in-out transform
+  {slide.active ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 blur-xl'}
+">
                     {slide.title}
                   </h1>
                 </motion.div>
