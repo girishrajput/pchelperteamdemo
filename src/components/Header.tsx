@@ -26,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white text-black shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff]/[.80] text-black shadow-md">
       <div className="flex items-center justify-between p-4 max-w-7xl mx-auto h-20">
 
         {/* Logo - Ensure /public/images/pc-helper-logo.png exists */}

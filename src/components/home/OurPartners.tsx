@@ -59,7 +59,7 @@ export default function OurPartners() {
                   alt={partner.name}
                   width={140}
                   height={80}
-                  className="w-full h-auto"
+                  className="w-full h-auto grayscale"
                 />
               </div>
             </SwiperSlide>

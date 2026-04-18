@@ -1,10 +1,22 @@
-import React from 'react';
-import Link from 'next/link';
-// Added Facebook, Twitter (for X), Instagram, and Linkedin
-import Image from 'next/image';
-import { Phone, Printer, MapPin, Send, Share2, Facebook, X, Instagram, Linkedin } from 'lucide-react';
-import ContactSection from './home/ContactSection';
+"use client"; // This line must be at the very top
 
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { 
+  Phone, 
+  Printer, 
+  MapPin, 
+  Send, 
+  Share2, 
+  Facebook, 
+  Instagram, 
+  Linkedin 
+} from 'lucide-react';
+import ContactSection from './home/ContactSection';
+import RecommendModal from './RecommendModal';
+
+// --- Configuration Constants ---
 const SERVICES_LINKS = [
   { name: "Computer Repair / PC & Mac", href: "/services/computer-repair-pc-mac" },
   { name: "IT & Server Rooms", href: "/services/it-server-rooms" },
@@ -27,16 +39,33 @@ const QUICK_LINKS = [
   { name: "Contact", href: "/contact" },
 ];
 
-// 1. Updated Social Links with Lucide Components
 const SOCIAL_LINKS = [
   { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100081790486686#", icon: <Facebook size={18} /> },
-  { name: "X", href: "https://x.com/SoroushSabzi", icon: <X size={18} /> }, // Lucide uses Twitter for X
+  {
+    name: "X", 
+    href: "https://x.com/SoroushSabzi", 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+        <path d="M18.244 2H21l-6.56 7.5L22 22h-6.828l-5.34-6.99L3.5 22H1l7.02-8.02L2 2h6.828l4.86 6.35L18.244 2z" />
+      </svg>
+    )
+  },
   { name: "Instagram", href: "https://www.instagram.com/soroushsabzi/", icon: <Instagram size={18} /> },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/soroush-sabzi-0944a08/", icon: <Linkedin size={18} /> },
-  { name: "Tumblr", href: "https://www.trustpilot.com/", icon: <span className="text-lg italic font-serif">t</span> },
+  {
+    name: "Trustpilot", 
+    href: "https://www.trustpilot.com/", 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+        <path d="M14.4 24c-4.1 0-7.2-2.6-7.2-7.5V9H4V5.6c2.4-.9 3.6-3 3.9-5.6h3.3v5.2H16V9h-4.8v6.9c0 2.2 1.1 3.3 3.1 3.3.8 0 1.6-.2 2.2-.5v3.4c-.7.3-1.7.6-3.1.6z" />
+      </svg>
+    )
+  },
 ];
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <ContactSection />
@@ -65,6 +94,8 @@ const Footer = () => {
                   <Link
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-gray-dark flex items-center justify-center text-gray-light hover:bg-primary hover:text-white transition-all duration-300"
                     aria-label={social.name}
                   >
@@ -116,7 +147,7 @@ const Footer = () => {
                 <span>(310) 360-5080</span>
               </div>
               <a
-                href="https://maps.google.com"
+                href="https://goo.gl/maps/example" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 hover:text-white transition-colors group"
@@ -132,12 +163,16 @@ const Footer = () => {
             <div className="flex flex-col gap-3 pt-4">
               <Link
                 href="/contact"
-                className="bg-primary text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-black transition-all flex items-center justify-center gap-2"
+                className="bg-primary text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-white/10 hover:text-white transition-all flex items-center justify-center gap-2"
               >
                 <Send size={16} />
                 Send a Message
               </Link>
-              <button className="border border-white/10 text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+              
+              <button 
+                onClick={() => setShowModal(true)} 
+                className="border border-white/10 text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-white/5 transition-all flex items-center justify-center gap-2"
+              >
                 <Share2 size={16} />
                 Recommend Us
               </button>
@@ -146,18 +181,24 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-gray-dark gap-4">
-          {/* <p>Copyright © {new Date().getFullYear()} PCHelperTeam | Design by <Link href="https://www.texource.com/" target="_blank" className='text-zinc-400 hover:text-white transition-colors'>TeXource</Link></p> */}
-
-
-
-          <p>Copyright © {new Date().getFullYear()} PCHelperTeam | Design by&nbsp;<span ><Link href="https://www.texource.com/" target="_blank" rel="noopener" className='text-white'>TeXource</Link>&nbsp;–&nbsp;<Link href="https://pchelperteam.com/" target="_blank" rel="noopener" className='text-white'>PCHelperTeam</Link>&nbsp;–&nbsp;<Link href="https://www.linkedin.com/in/soroush-sabzi/" target="_blank" rel="noopener" className='text-white'>Soroush Sabzi</Link></span></p>
-
-
-
-          <p className="flex items-center gap-1">Designed with <span className="text-primary">❤</span> Girish.</p>
+          <p>
+            Copyright © {new Date().getFullYear()} PCHelperTeam | Design by{' '}
+            <Link href="https://www.texource.com/" target="_blank" rel="noopener" className='text-white hover:underline'>TeXource</Link>
+            {' – '}
+            <Link href="https://pchelperteam.com/" target="_blank" rel="noopener" className='text-white hover:underline'>PCHelperTeam</Link>
+            {' – '}
+            <Link href="https://www.linkedin.com/in/soroush-sabzi/" target="_blank" rel="noopener" className='text-white hover:underline'>Soroush Sabzi</Link>
+          </p>
+          <p className="flex items-center gap-1">
+            Designed with <span className="text-primary">❤</span> Girish.
+          </p>
         </div>
       </footer>
 
+      <RecommendModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+      />
     </>
   );
 };

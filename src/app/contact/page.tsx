@@ -52,14 +52,14 @@ const Contact = () => {
       />
 
       <section>
-        <div className="bg-gray-light py-16 px-4">
+        <div className="bg-gray-light pt-16 pb-0 px-4">
           <div className="max-w-6xl mx-auto">
 
-            <div className="text-center mb-16">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-5xl font-extrabold text-black tracking-tight">
                 How Can We <span className="text-primary">Help?</span>
               </h2>
-              <p className="mt-5 text-lg text-gray-dark max-w-3xl mx-auto">
+              <p className="mt-2 text-lg text-gray-dark max-w-3xl mx-auto">
                 Talk to one of our consultants today to learn how we can help you with your technology needs!
               </p>
             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
 
                   {/* Functional Linked Title */}
                   <h3 className="text-xl font-bold text-black mb-4">
-                    <a 
+                    <a
                       href={item.link}
                       // Open external map link in new tab, but phone/email in same window
                       target={item.link.startsWith('http') ? "_blank" : "_self"}
