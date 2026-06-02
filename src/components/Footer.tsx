@@ -69,7 +69,7 @@ const Footer = () => {
   return (
     <>
       <ContactSection />
-      <footer className="bg-black text-gray-light py-16 px-6 border-t border-white/5 font-sans">
+      <footer className="bg-black text-gray-light pt-10 pb-4 px-6 border-t border-white/5 font-sans">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
           {/* Column 1: Brand & Social */}
@@ -180,7 +180,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-gray-dark gap-4">
+        <div className="pt-4 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-gray-dark gap-4">
           <p>
             Copyright © {new Date().getFullYear()} PCHelperTeam | Design by{' '}
             <Link href="https://www.texource.com/" target="_blank" rel="noopener" className='text-white hover:underline'>TeXource</Link>

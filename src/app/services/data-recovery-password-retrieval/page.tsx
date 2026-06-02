@@ -29,7 +29,7 @@ const Page = () => {
       <InnerHeader title={pageData.title} subtitle={pageData.subtitle} />
 
       <main className="w-full font-sans antialiased text-black overflow-x-hidden bg-white">
-        <section className="bg-white py-16 px-6 md:px-12 lg:px-24">
+        <section className="bg-white py-10 px-6 md:px-12 lg:px-24">
           <WhyChooseUs
             heading={<>Stay Ahead of Problems</>}
             description={

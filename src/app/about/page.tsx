@@ -18,10 +18,10 @@ const About = () => {
         subtitle=""
       />
 
-      <section className="bg-gray-light py-16 px-6 md:px-12 lg:px-24">
+      <section className="bg-gray-light pt-10 pb-0 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               
               <p className="text-lg text-gray-dark leading-relaxed">

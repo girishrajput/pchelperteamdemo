@@ -189,15 +189,15 @@ export default function CreativeTabs() {
   const tabs = Object.keys(SERVICE_DATA) as Array<keyof typeof SERVICE_DATA>;
 
   return (
-    <div className="min-h-screen bg-gray-light py-20 px-4">
+    <div className="min-h-screen bg-gray-light py-10 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">Our Specialized Services</h2>
-        <p className="text-gray-dark max-w-2xl mx-auto mb-12 text-center italic">
+        <h2 className="text-3xl md:text-4xl font-bold text-black mb-3 text-center">Our Specialized Services</h2>
+        <p className="text-gray-dark max-w-2xl mx-auto mb-3 text-center italic">
           Focused on results we seek to raise the efficiency and productivity for our clients.
         </p>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-8">
           <div className="inline-flex bg-white/80 backdrop-blur-md p-1.5 rounded-2xl shadow-xl border border-gray-light overflow-x-auto max-w-full">
             {tabs.map((tab) => (
               <button

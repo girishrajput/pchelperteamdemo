@@ -52,7 +52,7 @@ const Contact = () => {
       />
 
       <section>
-        <div className="bg-gray-light pt-16 pb-0 px-4">
+        <div className="bg-gray-light pt-10 pb-0 px-4">
           <div className="max-w-6xl mx-auto">
 
             <div className="text-center mb-8">

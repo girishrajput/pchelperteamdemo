@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white min-h-screen py-16 px-6 md:px-12 lg:px-24">
+    <section className="bg-white min-h-screen py-10 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* Left Column: Content */}

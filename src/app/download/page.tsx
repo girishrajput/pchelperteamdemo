@@ -12,7 +12,7 @@ const Download = () => {
         subtitle=""
       />
 
-      <section className="relative overflow-hidden bg-gray-light py-16 sm:py-24">
+      <section className="relative overflow-hidden bg-gray-light py-10 sm:py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:items-center lg:gap-x-12">
 

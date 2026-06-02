@@ -22,7 +22,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="bg-white py-20 px-6 lg:px-12">
+    <section className="bg-white py-10 px-6 lg:px-12">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         
         {/* Left Side: Content */}

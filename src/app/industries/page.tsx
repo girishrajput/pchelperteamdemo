@@ -51,7 +51,7 @@ const Industries = () => {
         subtitle=""
       />
 
-      <div className="bg-white text-black py-24 px-6 font-sans">
+      <div className="bg-white text-black py-10 px-6 font-sans">
         {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <div className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-primary uppercase bg-gray-light rounded-full">

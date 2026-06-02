@@ -14,7 +14,7 @@ const PCHelperLanding = () => {
   }, []);
 
   return (
-    <div className="bg-gray-200 text-gray-900 min-h-screen font-sans pt-16 pb-16">
+    <div className="bg-gray-200 text-gray-900 min-h-screen font-sans pt-10 pb-10">
       {/* Load Elfsight Script once globally for this component */}
       <Script 
         src="https://elfsightcdn.com/platform.js" 

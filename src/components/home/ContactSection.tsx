@@ -26,7 +26,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="bg-gray-light py-20 px-6 lg:px-12 min-h-screen flex items-center">
+    <section className="bg-gray-light py-10 px-6 lg:px-12 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         {/* Left Side: Content & Social Icons */}
