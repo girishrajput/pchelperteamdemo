@@ -147,15 +147,15 @@ const Footer = () => {
                 <span>(310) 360-5080</span>
               </div>
               <a
-                href="https://goo.gl/maps/example" 
+                href="https://maps.app.goo.gl/n4h8vwAPC2Eort6v6" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 hover:text-white transition-colors group"
               >
                 <MapPin size={16} className="mt-1 text-primary" />
                 <span className="leading-tight">
-                  2370 Westwood Blvd Ste F<br />
-                  Los Angeles, CA 90064
+                  2370 Westwood Blvd. Ste. F<br />
+                   Los Angeles, CA 90064
                 </span>
               </a>
             </div>

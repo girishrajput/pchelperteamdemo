@@ -3,18 +3,6 @@ import InnerHeader from '@/components/InnerHeader'
 
 const contactData = [
   {
-    title: "2370 Westwood Blvd Ste F Los Angeles, CA 90064",
-    // Link to Google Maps search for this specific address
-    link: "https://share.google/A6nZmUlM3QBe3PoMo",
-    icon: <MapPin className="w-8 h-8 text-white" />,
-    gradient: "bg-primary",
-    content: (
-      <p className="text-gray-dark text-sm leading-relaxed">
-        Come visit us any time from 11 AM to 4 PM, from Monday to Friday, or by appointment outside of those hours.
-      </p>
-    ),
-  },
-  {
     title: "(310) 360-5060",
     // Tel protocol for mobile dialers
     link: "tel:+13103605060",
@@ -22,24 +10,40 @@ const contactData = [
     gradient: "bg-black",
     content: (
       <div className="text-gray-dark text-sm space-y-1">
-        <p>You can reach us by phone 24/7, including weekends and holidays.</p>
+        <p>For immediate response 24/7 including weekends and holidays call us.</p>
       </div>
     ),
   },
+
   {
     title: "info@pchelperteam.com",
     // Mailto protocol for email clients
-    link: "mailto:info@pchelperteam.com",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=info@pchelperteam.com",
     icon: <Mail className="w-8 h-8 text-white" />,
     gradient: "bg-primary",
     content: (
       <div className="text-sm">
         <p className="text-gray-dark mt-1">
-          We will respond to your email within 30 minutes on business days.
+           For less urgent matters and tech-support needs and general info email us.
         </p>
       </div>
     ),
   },
+
+  {
+    title: "2370 Westwood Blvd. Ste. F Los Angeles, CA 90064",
+    // Link to Google Maps search for this specific address
+    link: "https://maps.app.goo.gl/n4h8vwAPC2Eort6v6",
+    icon: <MapPin className="w-8 h-8 text-white" />,
+    gradient: "bg-primary",
+    content: (
+      <p className="text-gray-dark text-sm leading-relaxed">
+        Visit us 11 Am to 6 PM with an appointment, If you require help or service just call us now.
+      </p>
+    ),
+  },
+
+  
 ];
 
 const Contact = () => {
@@ -52,7 +56,7 @@ const Contact = () => {
       />
 
       <section>
-        <div className="bg-gray-light pt-10 pb-0 px-4">
+        <div className="bg-gray-200 pt-10 pb-0 px-4">
           <div className="max-w-6xl mx-auto">
 
             <div className="text-center mb-8">
@@ -81,7 +85,7 @@ const Contact = () => {
                       href={item.link}
                       // Open external map link in new tab, but phone/email in same window
                       target={item.link.startsWith('http') ? "_blank" : "_self"}
-                      rel="noopener noreferrer"
+                      // rel="noopener noreferrer"
                       className="hover:text-primary transition-colors duration-200"
                     >
                       {item.title}

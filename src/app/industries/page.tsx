@@ -54,7 +54,7 @@ const Industries = () => {
       <div className="bg-white text-black py-10 px-6 font-sans">
         {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <div className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-primary uppercase bg-gray-light rounded-full">
+          <div className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-primary uppercase bg-gray-200 rounded-full">
             What We Do
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
@@ -78,7 +78,7 @@ const Industries = () => {
               </div>
 
               {/* Icon Circle */}
-              <div className="w-20 h-20 bg-gray-light text-primary rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-3">
+              <div className="w-20 h-20 bg-gray-200 text-primary rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-3">
                 {service.icon}
               </div>
 

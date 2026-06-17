@@ -13,7 +13,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-light">
       <button
-        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-light transition-colors"
+        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-200 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="font-semibold text-black">{question}</span>

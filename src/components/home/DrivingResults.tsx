@@ -24,7 +24,7 @@ const features = [
 
 export default function ResultsSection() {
   return (
-    <section className="bg-gray-light py-20 px-6 font-sans">
+    <section className="bg-gray-200 py-20 px-6 font-sans">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
           Driving Results That Matter
@@ -48,7 +48,7 @@ export default function ResultsSection() {
               >
                 {/* Animated Icon Container */}
                 <div 
-                  className={`w-20 h-20 mb-6 rounded-full bg-gray-light flex items-center justify-center 
+                  className={`w-20 h-20 mb-6 rounded-full bg-gray-200 flex items-center justify-center 
                              transition-all duration-500 transform group-hover:rotate-12 ${
                                item.color === 'primary' 
                                ? 'group-hover:bg-primary text-primary group-hover:text-white' 

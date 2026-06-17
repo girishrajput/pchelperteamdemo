@@ -59,7 +59,7 @@ const SERVICE_DATA = [
 
 export default function TypeofService() {
   return (
-    <section className="bg-gray-light py-20 px-4">
+    <section className="bg-gray-200 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Services */}
         <div className="divide-y divide-gray-light">

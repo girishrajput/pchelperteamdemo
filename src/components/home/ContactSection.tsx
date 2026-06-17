@@ -16,17 +16,17 @@ export default function ContactSection() {
   }
 
   // Common styles for inputs to keep the code clean
-  const inputStyles = "w-full p-3 rounded-lg border border-gray-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-gray-light";
+  const inputStyles = "w-full p-3 rounded-lg border border-gray-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-gray-200";
 
   const socialLinks = [
-    { Icon: Mail, href: "mailto:info@pchelperteam.com", label: "Email" },
+    { Icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=info@pchelperteam.com", label: "Email" },
     { Icon: Phone, href: "tel:+13103605060", label: "Phone" },
     { Icon: MessageSquare, href: "https://wa.me/+13103605060", label: "WhatsApp" },
     { Icon: User, href: "/contact", label: "Profile" },
   ];
 
   return (
-    <section className="bg-gray-light py-10 px-6 lg:px-12 min-h-screen flex items-center">
+    <section className="bg-gray-200 py-10 px-6 lg:px-12 flex items-center">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
         {/* Left Side: Content & Social Icons */}
@@ -96,9 +96,16 @@ export default function ContactSection() {
               </div>
 
               <select name="service" className={inputStyles}>
-                <option value="">Select a Service</option>
-                <option value="Web Development">Web Development</option>
-                <option value="App Development">App Development</option>
+                <option value="Select your Industry">Select your Industry</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Architecture">Architecture</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Financial Institutions">Financial Institutions</option>
+    <option value="Funds or Family Offices">Funds or Family Offices</option>
+    <option value="Healthcare and Science">Healthcare and Science</option>
+    <option value="Law">Law</option>
+    <option value="Nonprofit">Nonprofit</option>
+    <option value="Real Estate">Real Estate</option>
               </select>
 
               <textarea 
