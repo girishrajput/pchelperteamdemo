@@ -171,7 +171,7 @@ const Footer = () => {
               
               <button 
                 onClick={() => setShowModal(true)} 
-                className="border border-white/10 text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-white/5 transition-all flex items-center justify-center gap-2"
+                className="bg-primary text-white text-center font-bold py-3 px-6 rounded text-sm uppercase tracking-wide hover:bg-white/10 hover:text-white transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Share2 size={16} />
                 Recommend Us
